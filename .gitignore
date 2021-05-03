@@ -46,10 +46,15 @@ node_modules/
 .env
 .env.test
 
-
 # Created by https://www.toptal.com/developers/gitignore/api/direnv,node
 # Edit at https://www.toptal.com/developers/gitignore?templates=direnv,node
 
 ### direnv ###
 .direnv
 .envrc
+
+# Hide compiled CSS
+11ty/_includes/assets/styles/*
+
+# Local cache
+.cache

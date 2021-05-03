@@ -1,0 +1,10 @@
+{
+  "name": "demoventy",
+  "description": "An Eleventy starter kit for demos",
+  "url": "FILL ME",
+  "lang": "en",
+  "author": {
+    "name": "Yuya Saito",
+    "mail": "hello@studiomohawk.com"
+  }
+}

@@ -1,16 +1,25 @@
 const toml = require('toml');
 
-// Plugins
-const rssPlugin = require('@11ty/eleventy-plugin-rss');
-const syntaxHighlightPlugin = require('@11ty/eleventy-plugin-syntaxhighlight');
-const navigationPlugin = require('@11ty/eleventy-navigation');
+// Import plugins
 const md = require('@frontendweekly/eleventy-plugin-markdown');
 
+// Import filters
+
+// Import transforms
+
+
 module.exports = function (eleventyConfig) {
-  // Add plugins
-  eleventyConfig.addPlugin(rssPlugin);
-  eleventyConfig.addPlugin(syntaxHighlightPlugin);
-  eleventyConfig.addPlugin(navigationPlugin);
+  // Watch postcss
+  eleventyConfig.addWatchTarget('./11ty/_postcss/');
+
+  // Load plugins
+
+  // Load Filters
+
+  // Load Transforms
+
+  // Passthrough copy
+  // config.addPassthroughCopy({'11ty/images': 'images'});
 
   // I like toml...
   eleventyConfig.addDataExtension('toml', contents => toml.parse(contents));

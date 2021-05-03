@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang }}" class="no-js">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="supported-color-schemes" content="light dark">
+    <meta name="generator" content="Eleventy">
+    {% include "partials/global/meta-info.njk" %}
+    <script>document.documentElement.classList.remove('no-js');</script>
+    {% if global.environment == "production" %}
+      <style>{% include "assets/styles/main.css" %}</style>
+    {% else %}
+      <link rel="stylesheet" href="/css/main.css">
+    {% endif %}
+  </head>
+<body>
+{% include "partials/global/site-head.njk" %}
+{% block content %}
+{% endblock %}
+{% include "partials/global/site-foot.njk" %}
+</body>
+</html>
